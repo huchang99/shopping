@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CityActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/normal_orange_color">
+        <TextView
+            android:id="@+id/select_top_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/back"
+            android:drawablePadding="@dimen/little_space"
+            android:textColor="@color/white"
+            android:text="选择城市"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/text_size_defalut"/>
+
+        <ImageView
+            android:id="@+id/map_refresh_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map_refresh"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"/>
+    </RelativeLayout>
+    <include layout="@layout/head_city_title"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/index_city_top"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/list_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/normal_bg_color"
+            android:scrollbars="none"
+            android:layout_marginRight="@dimen/little_space">
+        </ListView>
+
+        <com.huchang.haxi.shoppingclient.myview.Siderbar
+            android:id="@+id/Siderbar"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
