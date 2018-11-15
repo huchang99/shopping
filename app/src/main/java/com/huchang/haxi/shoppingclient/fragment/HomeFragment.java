@@ -43,7 +43,22 @@ public class HomeFragment extends Fragment implements FindAddress.ListenGetAddrV
        // return super.onCreateView(inflater, container, savedInstanceState);
         View view = inflater.inflate(R.layout.homefragment,container,false);
         ButterKnife.bind(this,view);
+        initData();
+        initView();
+        init();
         return  view;
+    }
+
+    private void initView() {
+
+    }
+
+    private void init() {
+
+    }
+
+    private void initData() {
+
     }
 
     @Override

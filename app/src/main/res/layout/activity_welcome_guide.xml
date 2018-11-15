@@ -7,11 +7,11 @@
     android:orientation="vertical"
     tools:context=".WelcomeGuideAct">
     <FrameLayout
-        android:id="@+id/main_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-    </FrameLayout>
+    android:id="@+id/main_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+</FrameLayout>
     <RadioGroup
         android:id="@+id/main_bottom_tabs"
         android:orientation="horizontal"
