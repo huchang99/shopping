@@ -5,9 +5,9 @@ import android.media.Image;
 public class ModeHomeMenu {
 
     private String name;
-    private Image image;
+    private int image;
 
-    public ModeHomeMenu(String name,Image image) {
+    public ModeHomeMenu(String name,int image) {
         this.name = name;
         this.image = image;
     }
@@ -16,7 +16,7 @@ public class ModeHomeMenu {
         return name;
     }
 
-    public Image getImage() {
+    public int getImage() {
         return image;
     }
 }
